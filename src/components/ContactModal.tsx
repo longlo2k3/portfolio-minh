@@ -54,6 +54,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
           transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+          data-lenis-prevent
           className="relative w-full max-w-lg bg-[#121316] border border-[#D7E2EA]/20 rounded-[32px] sm:rounded-[40px] p-6 sm:p-8 shadow-2xl z-10 text-[#D7E2EA]"
         >
           {/* Close button */}

@@ -54,3 +54,24 @@ html, body, #root {
 ::-webkit-scrollbar-thumb:hover {
   background: #3c424e;
 }
+
+/* Continuous Marquee Slideshow - Hardware accelerated 60/120fps */
+@keyframes achievements-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.achievements-marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  transform: translate3d(0, 0, 0);
+  animation: achievements-scroll 35s linear infinite;
+}
+

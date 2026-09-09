@@ -53,28 +53,48 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         transition={{ duration: 0.7, delay: 0, ease: [0.25, 0.1, 0.25, 1] }}
         className="w-full flex flex-col z-20"
       >
-        <nav className="w-full flex justify-between items-center px-6 md:px-10 pt-6 md:pt-8">
-          <button
-            onClick={() => onNavigate("about")}
-            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200 cursor-pointer bg-transparent border-none"
-          >
-            About
-          </button>
-          <button
-            onClick={() => onNavigate("services")}
-            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200 cursor-pointer bg-transparent border-none"
-          >
-            Services
-          </button>
-          <button
-            onClick={() => onNavigate("projects")}
-            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200 cursor-pointer bg-transparent border-none"
-          >
-            Projects
-          </button>
+        <nav className="w-full flex flex-wrap justify-between items-center px-4 sm:px-6 md:px-10 pt-5 md:pt-7 gap-2 sm:gap-4">
+          <div className="flex items-center gap-3 sm:gap-6 md:gap-8">
+            <button
+              onClick={() => onNavigate("about")}
+              className="text-[#D7E2EA] font-medium uppercase tracking-wider text-xs sm:text-sm md:text-base lg:text-[1.15rem] hover:text-purple-400 transition-colors duration-200 cursor-pointer bg-transparent border-none"
+            >
+              About
+            </button>
+            <button
+              onClick={() => onNavigate("robotics")}
+              className="text-[#D7E2EA] font-medium uppercase tracking-wider text-xs sm:text-sm md:text-base lg:text-[1.15rem] hover:text-purple-400 transition-colors duration-200 cursor-pointer bg-transparent border-none"
+            >
+              Robotics
+            </button>
+            <button
+              onClick={() => onNavigate("projects")}
+              className="text-[#D7E2EA] font-medium uppercase tracking-wider text-xs sm:text-sm md:text-base lg:text-[1.15rem] hover:text-purple-400 transition-colors duration-200 cursor-pointer bg-transparent border-none"
+            >
+              Projects
+            </button>
+            <button
+              onClick={() => onNavigate("achievements")}
+              className="text-[#D7E2EA] font-medium uppercase tracking-wider text-xs sm:text-sm md:text-base lg:text-[1.15rem] hover:text-amber-400 transition-colors duration-200 cursor-pointer bg-transparent border-none hidden sm:inline"
+            >
+              Awards
+            </button>
+            <button
+              onClick={() => onNavigate("volunteer")}
+              className="text-[#D7E2EA] font-medium uppercase tracking-wider text-xs sm:text-sm md:text-base lg:text-[1.15rem] hover:text-emerald-400 transition-colors duration-200 cursor-pointer bg-transparent border-none hidden md:inline"
+            >
+              Volunteer
+            </button>
+            <button
+              onClick={() => onNavigate("services")}
+              className="text-[#D7E2EA] font-medium uppercase tracking-wider text-xs sm:text-sm md:text-base lg:text-[1.15rem] hover:text-purple-400 transition-colors duration-200 cursor-pointer bg-transparent border-none"
+            >
+              Services
+            </button>
+          </div>
           <button
             onClick={onOpenContact}
-            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200 cursor-pointer bg-transparent border-none"
+            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-xs sm:text-sm md:text-base lg:text-[1.15rem] hover:text-purple-400 transition-colors duration-200 cursor-pointer bg-transparent border-none px-3 py-1 rounded-full border border-white/20 hover:border-purple-400"
           >
             Contact
           </button>
